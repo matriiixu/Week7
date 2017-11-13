@@ -1,3 +1,12 @@
+function onLoad() {
+    document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+function onDeviceReady(){
+    random();
+    vibrate();
+}
+
 function random() {
     var val = !Math.round(Math.random());
 
@@ -7,4 +16,9 @@ function random() {
     }else{
         navigator.notification.beep(2); //beep twice
     }
+}
+
+function vibrate(){
+    //vibrate for 2000 milliseconds
+    navigator.vibrate(2000);
 }
