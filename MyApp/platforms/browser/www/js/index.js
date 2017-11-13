@@ -17,9 +17,3 @@ function sound() {
         navigator.vibrate(200);
     }
 }
-
-function vibrate(){
-    //vibrate for 2000 milliseconds
-    alert('Pressed!');
-    
-}
