@@ -2,8 +2,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady(){
     
-    document.getElementById("sound").addEventListener("click", sound());
-    document.getElementById("vibrate").addEventListener("click", vibrate());
+    document.getElementById("sound").addEventListener("click", sound);
+    document.getElementById("vibrate").addEventListener("click", vibrate);
 }
 
 function sound() {
