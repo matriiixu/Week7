@@ -1,13 +1,12 @@
-function onLoad() {
-    document.addEventListener("deviceready", onDeviceReady, false);
-}
+document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady(){
-    random();
-    vibrate();
+    
+    document.getElementById("sound").addEventListener("click", sound());
+    document.getElementById("vibrate").addEventListener("click", vibrate());
 }
 
-function random() {
+function sound() {
     var val = !Math.round(Math.random());
 
     alert(val);
@@ -20,5 +19,6 @@ function random() {
 
 function vibrate(){
     //vibrate for 2000 milliseconds
+    alert('Pressed!');
     navigator.vibrate(2000);
 }
